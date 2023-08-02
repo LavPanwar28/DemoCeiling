@@ -29,8 +29,16 @@ namespace Demo_Ceiling
                   assembLyPath,
                   "Demo_Ceiling.Ceiling"
                   );
+            PushButtonData pushButtonData1 =
+                 new PushButtonData("btnDemo2",
+                 "Test1",
+                 assembLyPath,
+                 "Demo_Ceiling.Ceiling"
+                 );
             PushButton pushButton =
                   ribbonPanel.AddItem(pushButtonData) as PushButton;
+            PushButton pushButton1 =
+                          ribbonPanel.AddItem(pushButtonData1) as PushButton;
 
             pushButton.LargeImage = BmpImageSource("Demo_Ceiling.Image.test.bmp");
 
